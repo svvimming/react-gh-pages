@@ -67,7 +67,7 @@ class NplusOne extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        displayTextForm: false,
+        displayTextForm: true,
         value: 'write here...'
       };
     this.handleChange = this.handleChange.bind(this);
@@ -116,7 +116,7 @@ class NplusOne extends React.Component {
       transform: 'rotateX('+this.props.theta+'deg) rotateY('+this.props.phi+'deg) rotateZ('+this.props.alpha+'deg)',
       transformOrigin: 'center center'
     };
-    if(this.state.displayTextForm){
+    // if(this.state.displayTextForm){
       return(
         <div className="nplus" style={orientation}>
           <form>
@@ -138,17 +138,17 @@ class NplusOne extends React.Component {
           </button>
         </div>
       )
-    } else {
-      return(
-        <button
-        className="nplus"
-        style={orientation}
-        onClick={() => this.displayTextForm()}
-        >
-          n+1
-        </button>
-      )
-    }
+    // } else {
+    //   return(
+    //     <button
+    //     className="nplus"
+    //     style={orientation}
+    //     onClick={() => this.displayTextForm()}
+    //     >
+    //       n+1
+    //     </button>
+    //   )
+    // }
   }
 }
 
