@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import lefty from './left.png'
+import righty from './right.png'
 import './index.css';
 const hexColors = ['#ffa99e', '#ffad42', '#35b099', '#66043a', '#1f8758'];
 const GLOBS = [
@@ -53,8 +55,8 @@ class Plob extends React.Component {
     }
     return (
       <div className="roundfloat" style={orientation}>
-      <img className="floatLeft" src={require("./left.png")} alt='ops' width={w} height={h}/>
-      <img className="floatRight" src={require("./right.png")} alt='ops' width={w} height={h}/>
+      <img className="floatLeft" src={lefty} alt='ops' width={w} height={h}/>
+      <img className="floatRight" src={righty} alt='ops' width={w} height={h}/>
       <p className="plobtext">{this.props.text}</p>
       </div>
     );
@@ -197,11 +199,11 @@ class Chain extends React.Component {
 
 // ========================================
 
-ReactDOM.render(
-  <Chain />,
-  document.getElementById('root')
-);
-
+// ReactDOM.render(
+//   <Chain />,
+//   document.getElementById('root')
+// );
+export default Chain;
 
 
 

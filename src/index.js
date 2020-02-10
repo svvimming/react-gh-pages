@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
-import Chain from './Glob';
+import './index00.css';
+import Chain from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<Chain />, document.getElementById('root'));
