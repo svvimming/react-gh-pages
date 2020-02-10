@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import lefty from './left.png'
 import righty from './right.png'
 import './index.css';

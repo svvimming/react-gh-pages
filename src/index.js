@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index00.css';
+// import './index00.css';
 import Chain from './App';
 import * as serviceWorker from './serviceWorker';
 
