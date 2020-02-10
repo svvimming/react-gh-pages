@@ -156,12 +156,12 @@ class Chain extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      length: true
+      length: 3
     }
   }
   addToChain() {
     this.setState({
-      length: true,
+      length: this.state.length+1,
     })
   }
 
@@ -182,6 +182,7 @@ class Chain extends React.Component {
             characters={glob.chars}/>
           ))}
           <NplusOne
+          key={'nplus'+this.state.length}
           x={100+200*Math.sin(GLOBS.length*Math.PI/12)}
           y={calcOffset(GLOBS.length -1) + GLOBS[GLOBS.length-1].chars*0.5}
           theta={Math.random()*90 -45}
