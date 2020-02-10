@@ -1,13 +1,81 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  z-index: 999;
+}
+
+.nplus1 {
+  position: absolute;
+  background: transparent;
+  border: 1px solid #787C85;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #787C85;
+  opacity: 50%;
+  text-align: center;
+  height: 200px;
+  width: 300px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.textfield {
+  position: relative;
+  background: transparent;
+  top: 30px;
+  border: none;
+  font-weight: bold;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+  opacity: 100%;
+}
+
+.okie{
+  position: relative;
+  top: 36px;
+}
+
+.roundfloat {
+  position: absolute;
+  background: transparent;
+  overflow-wrap: break-word;
+  display: inline-block;
+}
+
+.floatLeft {
+  float: left;
+  shape-outside: url("./left.png");
+  overflow-wrap: break-word;
+  opacity: 0.0;
+}
+
+.floatRight {
+  float: right;
+  shape-outside: url("./right.png");
+  overflow-wrap: break-word;
+  opacity: 0.0;
+}
+
+/* .polyleft {
+  width: 75px;
+  height: 60px;
+  margin: 0px auto;
+  -webkit-hyphens: auto;
+  -webkit-shape-inside: circle(50%, 50%, 50%);
+  text-align: justify;
+} */
+
+.plobtext {
+    text-align: left;
+    overflow-wrap: break-word;
 }
