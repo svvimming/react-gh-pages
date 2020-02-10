@@ -119,7 +119,7 @@ class NplusOne extends React.Component {
     // if(this.state.displayTextForm){
       return(
         <div style={orientation}>
-          <form>
+          <form action="">
 
             <textarea
             className="textfield"
