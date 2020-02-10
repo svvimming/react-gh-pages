@@ -118,7 +118,7 @@ class NplusOne extends React.Component {
     };
     if(this.state.displayTextForm){
       return(
-        <div className="nplus1" style={orientation}>
+        <div className="nplus" style={orientation}>
           <form>
 
             <textarea
@@ -141,7 +141,7 @@ class NplusOne extends React.Component {
     } else {
       return(
         <button
-        className="nplus1"
+        className="nplus"
         style={orientation}
         onClick={() => this.displayTextForm()}
         >
