@@ -7,23 +7,6 @@ p {
   z-index: 999;
 }
 
-/* .nplus {
-  position: absolute;
-  background: transparent;
-  border: 1px solid #787C85;
-  border-radius: 50%;
-  font-size: 24px;
-  font-weight: bold;
-  color: #787C85;
-  opacity: 50%;
-  text-align: center;
-  height: 200px;
-  width: 300px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  outline: none;
-} */
 
 .textfield {
   position: relative;
@@ -66,14 +49,6 @@ p {
   opacity: 0.0;
 }
 
-/* .polyleft {
-  width: 75px;
-  height: 60px;
-  margin: 0px auto;
-  -webkit-hyphens: auto;
-  -webkit-shape-inside: circle(50%, 50%, 50%);
-  text-align: justify;
-} */
 
 .plobtext {
     text-align: left;
