@@ -37,6 +37,7 @@ function calcOffset(i) {
   for (let j=0; j<i; j++){
     offsetY += GLOBS[j].chars*0.5;
   }
+  console.log(offsetY);
   return offsetY;
 }
 
@@ -91,6 +92,7 @@ class NplusOne extends React.Component {
     });
   }
 
+
   createPlob() {
     var data = {
       text: this.state.value,
@@ -116,9 +118,10 @@ class NplusOne extends React.Component {
       transform: 'rotateX('+this.props.theta+'deg) rotateY('+this.props.phi+'deg) rotateZ('+this.props.alpha+'deg)',
       transformOrigin: 'center center'
     };
+
     // if(this.state.displayTextForm){
       return(
-        <div style={orientation}>
+        <div className="roundfloat" style={orientation}>
           <form action="">
 
             <textarea
@@ -187,7 +190,7 @@ class Chain extends React.Component {
           y={calcOffset(GLOBS.length -1) + GLOBS[GLOBS.length-1].chars*0.5}
           theta={Math.random()*90 -45}
           phi={Math.random()*90 -45}
-          alpha={Math.random()*90 -45}
+          alpha={Math.random()*90 -45 }
           update={this.addToChain.bind(this)}
           color={hexColors[Math.floor(Math.random()*hexColors.length)]}
           />
@@ -207,7 +210,7 @@ class Chain extends React.Component {
 export default Chain;
 
 
-
+// y={calcOffset(GLOBS.length -1) + GLOBS[GLOBS.length-1].chars*0.5}
 
 // <div className="roundfloat" style={orientation}>
 // <img className="floatLeft" src={require("./left.png")} alt='ops' width={w} height={h}/>
